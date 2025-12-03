@@ -1,0 +1,7 @@
+1. Zrobić symulację wzmacniacza do mikrofonu
+
+2. Zrobić symulację Delta-sigma ADC
+
+3. DAC + speaker
+
+4. Zasilanie (tutaj też zastanowić się nad wgrywaniem kodu)
