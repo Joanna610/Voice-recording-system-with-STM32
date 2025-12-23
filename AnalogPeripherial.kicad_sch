@@ -7462,7 +7462,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "my_custom_stuff:microphone"
 			(at 185.42 49.53 90)
 			(effects
 				(font
@@ -9279,7 +9279,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "my_custom_stuff:button"
 			(at 119.38 153.67 0)
 			(effects
 				(font
@@ -9349,7 +9349,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "my_custom_stuff:speaker"
 			(at 209.55 111.76 0)
 			(effects
 				(font
@@ -10037,7 +10037,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal"
 			(at 105.41 59.69 0)
 			(effects
 				(font
@@ -10868,7 +10868,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "my_custom_stuff:button"
 			(at 119.38 171.45 0)
 			(effects
 				(font
