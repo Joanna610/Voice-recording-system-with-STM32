@@ -112,7 +112,7 @@
 	(net 30 "unconnected-(J3-Shield-Pad6)_1")
 	(net 31 "unconnected-(J3-Shield-Pad6)_2")
 	(net 32 "unconnected-(J3-ID-Pad4)")
-	(net 33 "unconnected-(J3-Shield-Pad6)_3")
+	(net 33 "unconnected-(J3-Shield-Pad6)_0")
 	(net 34 "USB+")
 	(net 35 "USB-")
 	(net 36 "BOOT0")
@@ -1293,7 +1293,7 @@
 		(descr "LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "LED handsolder")
 		(property "Reference" "D1"
-			(at 0 -1.65 360)
+			(at 0 -1.65 0)
 			(layer "F.SilkS")
 			(uuid "e37a9cfa-901d-455e-bd53-6a1c1cbdc103")
 			(effects
@@ -1304,7 +1304,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 0 1.65 360)
+			(at 0 1.65 0)
 			(layer "F.Fab")
 			(uuid "7233c64f-fae9-4b4a-bfdc-e494594f92fd")
 			(effects
@@ -1479,7 +1479,7 @@
 			(uuid "269a0a91-baaf-455f-a514-ed598556892f")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "7d550649-80c4-4839-a7c7-ab335b4f1944")
 			(effects
@@ -2024,7 +2024,7 @@
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R6"
-			(at 0 -1.65 360)
+			(at 0 -1.65 0)
 			(layer "F.SilkS")
 			(uuid "40305058-6e0f-47f9-a8f2-c5d861026532")
 			(effects
@@ -2035,7 +2035,7 @@
 			)
 		)
 		(property "Value" "5.9k"
-			(at 0 1.65 360)
+			(at 0 1.65 0)
 			(layer "F.Fab")
 			(uuid "5e45be8e-155f-4afa-8207-7b9b2ba09f7d")
 			(effects
@@ -2190,7 +2190,7 @@
 			(uuid "4acfbb96-0569-45bd-a680-cef33d2a8252")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "a37c1025-6814-45c5-8cb2-6fe07d87f6cd")
 			(effects
@@ -2441,6 +2441,134 @@
 			(rotate
 				(xyz 0 0 0)
 			)
+		)
+	)
+	(footprint "my_custom_stuff:microphone"
+		(layer "F.Cu")
+		(uuid "3383c430-0503-470d-89ff-0b390d2bb940")
+		(at 54.55 75.4)
+		(property "Reference" "MK1"
+			(at -0.8 6.35 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "ac2ca793-90bc-47f4-99bb-b5660fb249db")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "Microphone"
+			(at -0.8 7.85 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "480c77d3-89bd-4f0d-8caf-d68dc60b1977")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "my_custom_stuff:microphone"
+			(at 4.3 6 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b74e2f3c-0bf2-4bef-bb8e-5289216399da")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 4.3 6 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6c107544-6b5e-4074-a5c4-7036bc344719")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Microphone"
+			(at 4.3 6 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "744a639e-45e4-4b23-9ee6-f1480aaa7794")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/168725d3-ee52-4eb8-9bf1-27d567c37fe6")
+		(sheetname "Root")
+		(sheetfile "AnalogPeripherial.kicad_sch")
+		(attr through_hole)
+		(fp_circle
+			(center 0 0)
+			(end 4.85 0)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(fill none)
+			(layer "F.SilkS")
+			(uuid "fb542773-aabc-4dfc-917d-abe12e246b88")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 5 0)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill none)
+			(layer "F.CrtYd")
+			(uuid "d1beead4-3a08-47b1-832a-b1c81dfa3a8a")
+		)
+		(fp_text user "${REFERENCE}"
+			(at -0.8 9.35 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "c4f46a95-b113-48f1-b7c5-4f683a2da42a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole circle
+			(at 2 -1.27)
+			(size 1.524 1.524)
+			(drill 0.762)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 2 "GND")
+			(pinfunction "-")
+			(pintype "passive")
+			(uuid "a9f22105-522e-46f4-a369-a4db00dd1831")
+		)
+		(pad "2" thru_hole circle
+			(at 2 1.27)
+			(size 1.524 1.524)
+			(drill 0.762)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 15 "Net-(MK1-+)")
+			(pinfunction "+")
+			(pintype "passive")
+			(uuid "665757d0-6f80-4dbb-add0-655c844d1591")
 		)
 	)
 	(footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
@@ -2871,7 +2999,7 @@
 			(uuid "dc557662-b809-4b17-90fa-dc37b57dc87c")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "20ea2ea7-5cb8-4798-9c97-46cfc8fcbbb5")
 			(effects
@@ -3993,6 +4121,134 @@
 			)
 		)
 	)
+	(footprint "my_custom_stuff:speaker"
+		(layer "F.Cu")
+		(uuid "4b62f590-51aa-4c47-9e5b-397f68b34f2c")
+		(at 61.55 57.35)
+		(property "Reference" "LS1"
+			(at 0 -0.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "4bc5cc67-a580-4aee-8a23-3308530a443c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "Speaker"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "9bba9533-09ee-4c36-b3d6-c406a3c3102d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "my_custom_stuff:speaker"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "de4b072e-7b0e-4034-bd0f-57f9b7b8f888")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5d819c36-f1f8-47c2-bc55-9b583490a793")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Speaker"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "850b1b3e-ed4f-472e-a9d4-9a4091a418f5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/5bbac550-4ea7-4c21-b8a8-15907e04ec93")
+		(sheetname "Root")
+		(sheetfile "AnalogPeripherial.kicad_sch")
+		(attr through_hole)
+		(fp_circle
+			(center 0 0)
+			(end 11.5 0)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(fill none)
+			(layer "F.SilkS")
+			(uuid "45a113ff-fdfc-4ed8-a05f-4693add94d3b")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 12 0)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill none)
+			(layer "F.CrtYd")
+			(uuid "d9a92c7a-0c4c-4669-89a0-692d6f64143f")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "9270c8a6-feea-4372-8c0b-57bd8f71eff1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole circle
+			(at 5 0)
+			(size 1.73 1.73)
+			(drill 0.95)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 13 "Net-(C18-Pad2)")
+			(pinfunction "1")
+			(pintype "input")
+			(uuid "dee21b0a-1126-49a1-8832-d6365e4cd329")
+		)
+		(pad "2" thru_hole circle
+			(at -5 0)
+			(size 1.72 1.72)
+			(drill 0.95)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 2 "GND")
+			(pinfunction "2")
+			(pintype "input")
+			(uuid "2c5e1922-e105-46ed-9d04-b2d645a49508")
+		)
+	)
 	(footprint "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "4b83f568-5a35-4976-b8b0-b590c9bf5b30")
@@ -4213,7 +4469,7 @@
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R1"
-			(at 0 -1.65 360)
+			(at 0 -1.65 0)
 			(layer "F.SilkS")
 			(uuid "31cbbab1-c696-4c1a-a000-5af1227dc9d5")
 			(effects
@@ -4224,7 +4480,7 @@
 			)
 		)
 		(property "Value" "1.5k"
-			(at 0 1.65 360)
+			(at 0 1.65 0)
 			(layer "F.Fab")
 			(uuid "f9c23d34-8b70-40db-83b7-42ab1fdca81b")
 			(effects
@@ -4379,7 +4635,7 @@
 			(uuid "d32909bf-3a2a-4f89-92ef-00b6716f551a")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "a6d81a26-aad0-4e3d-9706-60849d486e0b")
 			(effects
@@ -4417,6 +4673,134 @@
 			(rotate
 				(xyz 0 0 0)
 			)
+		)
+	)
+	(footprint "my_custom_stuff:button"
+		(layer "F.Cu")
+		(uuid "4ff6e2e2-7cf8-4769-8f3c-8edc4eeee74a")
+		(at 63.7 80.75)
+		(property "Reference" "SW2"
+			(at 0.35 -1 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "bf323107-8465-48da-8e11-712cd76df232")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "replay"
+			(at 0.35 0.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "2dd4c107-d3e2-46ac-97f3-94574f11c52e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "my_custom_stuff:button"
+			(at 0.35 -0.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b8d22faa-a231-408f-ac59-7d16ec48091b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0.35 -0.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d0d2b4cb-7235-4bb0-b35f-14e06b32e1c7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 0.35 -0.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "71f5d4f0-346f-4e4a-8630-6f4972a30803")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/902e854b-770f-4f6d-bd92-2aa19140f9d1")
+		(sheetname "Root")
+		(sheetfile "AnalogPeripherial.kicad_sch")
+		(attr through_hole)
+		(fp_rect
+			(start -3 -3)
+			(end 3 3)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(fill none)
+			(layer "F.SilkS")
+			(uuid "761bd6a3-4e8c-4ade-acea-4f9b0a11f571")
+		)
+		(fp_rect
+			(start -3.1 -3.1)
+			(end 3.1 3.1)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill none)
+			(layer "F.CrtYd")
+			(uuid "e623b7d1-40da-4508-bfe9-c0afb9fbb600")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0.35 2 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "919f121b-cf77-415d-b291-e4756d29ca81")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole rect
+			(at -2.55 0)
+			(size 0.85 0.85)
+			(drill 0.762)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 54 "PUSH_REPLAY")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "705a2c28-29fa-46fe-bdc3-26a60c429e76")
+		)
+		(pad "2" thru_hole rect
+			(at 2.55 0)
+			(size 0.85 0.85)
+			(drill 0.762)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 23 "Net-(D3-A)")
+			(pinfunction "2")
+			(pintype "passive")
+			(uuid "f27ab35e-5082-42c7-b2c2-404de636dc7e")
 		)
 	)
 	(footprint "my_custom_stuff:potencjometr"
@@ -4552,7 +4936,7 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C4"
-			(at 0 -1.68 360)
+			(at 0 -1.68 0)
 			(layer "F.SilkS")
 			(uuid "1fe94713-fa88-4222-9fe0-5bdb8730f429")
 			(effects
@@ -4563,7 +4947,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 0 1.68 360)
+			(at 0 1.68 0)
 			(layer "F.Fab")
 			(uuid "5b01250d-65d3-4353-87fa-f66549d666fe")
 			(effects
@@ -4718,7 +5102,7 @@
 			(uuid "d3d72177-461f-480d-8df5-ac9f860dd124")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "c44ab857-b9d2-4dcd-aa80-4b53d5939124")
 			(effects
@@ -5727,7 +6111,7 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C16"
-			(at 0 -1.68 360)
+			(at 0 -1.68 0)
 			(layer "F.SilkS")
 			(uuid "2e0f14f5-c7a2-400f-afca-915b2b151832")
 			(effects
@@ -5738,7 +6122,7 @@
 			)
 		)
 		(property "Value" "100p"
-			(at 0 1.68 360)
+			(at 0 1.68 0)
 			(layer "F.Fab")
 			(uuid "6d503bbc-e631-410c-af70-666d90474712")
 			(effects
@@ -5893,7 +6277,7 @@
 			(uuid "b2edf5c8-9292-475b-9e68-b6fbc6f4b8c5")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "ff9c8478-766e-45d9-9f90-3f59245978c3")
 			(effects
@@ -6153,7 +6537,7 @@
 		(descr "Through hole straight pin header, 1x04, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x04 2.54mm single row")
 		(property "Reference" "J1"
-			(at 0 -2.33 360)
+			(at 0 -2.33 0)
 			(layer "F.SilkS")
 			(uuid "5c8e245a-9825-4093-ae2e-22a9fa7f4bd5")
 			(effects
@@ -6164,7 +6548,7 @@
 			)
 		)
 		(property "Value" "USART"
-			(at 0 9.95 360)
+			(at 0 9.95 0)
 			(layer "F.Fab")
 			(uuid "38f2326d-f5e2-43a0-a631-cbc128718a30")
 			(effects
@@ -9100,7 +9484,7 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C9"
-			(at 0 -1.68 360)
+			(at 0 -1.68 0)
 			(layer "F.SilkS")
 			(uuid "f80ab761-552b-4688-bdfc-8dfcaf9cbbed")
 			(effects
@@ -9111,7 +9495,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 0 1.68 360)
+			(at 0 1.68 0)
 			(layer "F.Fab")
 			(uuid "43409ac4-8ef4-40ce-a870-ab3caa2a7147")
 			(effects
@@ -9266,7 +9650,7 @@
 			(uuid "4e4793a5-bf9e-48e3-8f72-08fc952fb20b")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "2b619e4e-fb8f-4bc8-9eb1-3df5cb1878bb")
 			(effects
@@ -10081,7 +10465,7 @@
 			(at -4.45 -2.6)
 			(size 2 1.7)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 31 "unconnected-(J3-Shield-Pad6)_2")
+			(net 30 "unconnected-(J3-Shield-Pad6)_1")
 			(pinfunction "Shield")
 			(pintype "passive+no_connect")
 			(uuid "6c26ab30-fb17-492e-b99f-dc3e52046e77")
@@ -10099,7 +10483,7 @@
 			(at 4.45 -2.6)
 			(size 2 1.7)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 33 "unconnected-(J3-Shield-Pad6)_3")
+			(net 31 "unconnected-(J3-Shield-Pad6)_2")
 			(pinfunction "Shield")
 			(pintype "passive+no_connect")
 			(uuid "c3b02e39-5f99-4c84-abcb-67f86ed2e2f8")
@@ -10108,7 +10492,7 @@
 			(at 4.45 2.85)
 			(size 2 1.7)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 30 "unconnected-(J3-Shield-Pad6)_1")
+			(net 33 "unconnected-(J3-Shield-Pad6)_0")
 			(pinfunction "Shield")
 			(pintype "passive+no_connect")
 			(uuid "5658357b-e7d2-43e1-a302-02c5129421a7")
@@ -10338,6 +10722,134 @@
 			)
 		)
 	)
+	(footprint "my_custom_stuff:button"
+		(layer "F.Cu")
+		(uuid "c276a42f-bd91-400f-9367-d5c7a097bd5d")
+		(at 63.7 73.5)
+		(property "Reference" "SW1"
+			(at 0.35 -1 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "ee7bc47a-d504-4e1f-84ed-45ae96d42441")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "record"
+			(at 0.35 0.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "cb5b0b7e-2f48-40ba-8af8-1d4140fec3c8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Footprint" "my_custom_stuff:button"
+			(at 0.35 -0.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4b8a23a9-d71e-4876-8b53-1b33eeb575dd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0.35 -0.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "57cfe077-45ee-4131-b2df-fe289d9a53da")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 0.35 -0.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "63e90fbf-53d0-4af1-a363-9c3373742e00")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/5a5114b3-aade-4f5f-b916-f082c75d2231")
+		(sheetname "Root")
+		(sheetfile "AnalogPeripherial.kicad_sch")
+		(attr through_hole)
+		(fp_rect
+			(start -3 -3)
+			(end 3 3)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(fill none)
+			(layer "F.SilkS")
+			(uuid "8c492549-96b4-4476-988c-0ee38aeecdb9")
+		)
+		(fp_rect
+			(start -3.1 -3.1)
+			(end 3.1 3.1)
+			(stroke
+				(width 0.05)
+				(type default)
+			)
+			(fill none)
+			(layer "F.CrtYd")
+			(uuid "ba00ef78-2242-4956-b985-ca9d4b638e7b")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0.35 2 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "294a3300-9351-4d54-a1b3-3000ef1b56b1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole rect
+			(at -2.55 0)
+			(size 0.85 0.85)
+			(drill 0.762)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 65 "PUSH_REC")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "ef56bee6-ba71-458a-8533-7358054adb40")
+		)
+		(pad "2" thru_hole rect
+			(at 2.55 0)
+			(size 0.85 0.85)
+			(drill 0.762)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 22 "Net-(D2-A)")
+			(pinfunction "2")
+			(pintype "passive")
+			(uuid "0d6ac72c-aa83-48f7-b43e-ca507e270c7b")
+		)
+	)
 	(footprint "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 		(layer "F.Cu")
 		(uuid "c9b0a44f-9dc5-4970-8171-cf3757dc08e3")
@@ -10345,7 +10857,7 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C1"
-			(at 0 -1.68 360)
+			(at 0 -1.68 0)
 			(layer "F.SilkS")
 			(uuid "62f33ef5-3f1e-45b3-86b3-93129f9837b5")
 			(effects
@@ -10356,7 +10868,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 0 1.68 360)
+			(at 0 1.68 0)
 			(layer "F.Fab")
 			(uuid "3e225528-604a-4765-bd4c-e950664ba900")
 			(effects
@@ -10511,7 +11023,7 @@
 			(uuid "b5dd8ed8-407f-4312-be27-7da9a64aeefb")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "05a8d928-2e7e-4e59-af44-9f4fd0b13f8c")
 			(effects
@@ -12049,7 +12561,7 @@
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R2"
-			(at 0 -1.65 360)
+			(at 0 -1.65 0)
 			(layer "F.SilkS")
 			(uuid "3ed3c6d5-d7cc-4e17-8f41-2d90fc88d10c")
 			(effects
@@ -12060,7 +12572,7 @@
 			)
 		)
 		(property "Value" "1.5k"
-			(at 0 1.65 360)
+			(at 0 1.65 0)
 			(layer "F.Fab")
 			(uuid "46a19e27-6ac2-49d7-9cd6-fc65cfc094d9")
 			(effects
@@ -12215,7 +12727,7 @@
 			(uuid "bd5b93d6-bc00-427c-8a2a-d020cddbdc1a")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "df592600-80f0-4038-b156-f8ce57060ae8")
 			(effects
