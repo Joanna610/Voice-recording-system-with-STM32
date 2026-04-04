@@ -6980,6 +6980,26 @@
 		)
 		(uuid "c83d79da-c3d0-4b40-87e7-85990f40f7c0")
 	)
+	(text "ideally 78.7"
+		(exclude_from_sim no)
+		(at 219.456 62.738 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c95a2850-f305-465f-a2d7-79cb1bf96c91")
+	)
+	(text "ideally 0.05u\n"
+		(exclude_from_sim no)
+		(at 248.412 114.046 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d2a001f4-f6a3-4534-9dda-c36acd81c5f9")
+	)
 	(global_label "SWCLK"
 		(shape input)
 		(at 158.75 66.04 0)
@@ -11107,7 +11127,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.05u"
+		(property "Value" "0.05n"
 			(at 240.03 110.4899 0)
 			(effects
 				(font
@@ -12598,7 +12618,7 @@
 				)
 			)
 		)
-		(property "Value" "78.7"
+		(property "Value" "100"
 			(at 219.456 57.15 90)
 			(effects
 				(font
